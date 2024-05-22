@@ -1,0 +1,184 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #eee; /* Light text color */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.note-app {
+  background-color: #333; /* Slightly darker background for the note app */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase box shadow darkness */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.note-item {
+  background-color: #2c2c2c; /* Slightly darker note item background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.note-item:hover {
+  transform: scale(1.05);
+}
+
+.note-item.archived {
+  opacity: 0.7;
+}
+
+.note-item__header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-item__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff; /* White text color for title */
+}
+
+.note-item__date {
+  font-size: 0.8em;
+  color: #bbb; /* Lighter text color for date */
+}
+
+.note-item__body {
+  margin-bottom: 10px;
+}
+
+.note-item__text {
+  line-height: 1.4;
+  color: #ddd; /* Lighter text color for body */
+}
+
+.delete-button {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 5px; /* Add margin to create space between archive and delete buttons */
+
+}
+
+.delete-button:hover {
+  background-color: #ff2a2a;
+}
+
+.arsip-button {
+  background-color: #3498db; /* Blue color for the archive button */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.arsip-button:hover {
+  background-color: #2980b9; /* Darker blue color on hover */
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-input textarea {
+  padding: 10px;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 3px;
+  background-color: #333; /* Darker background color */
+  color: #eee; /* Light text color */
+  border: 1px solid #555; /* Darker border color */
+  height: 100px;
+}
+
+.note-input input,
+.note-input button {
+  padding: 10px;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 3px;
+  background-color: #333; /* Darker background color */
+  color: #eee; /* Light text color */
+  margin-bottom: 10px;
+  border: 1px solid #555; /* Darker border color */
+}
+
+.note-input button {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.note-input button:hover {
+  background-color: #45a049;
+}
+
+.note-search {
+  margin-bottom: 20px;
+}
+
+.note-search input {
+  padding: 10px;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 3px;
+  background-color: #333; /* Darker background color */
+  color: #eee; /* Light text color */
+}
+
+.toggle-buttons {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.toggle-buttons button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 5px;
+}
+
+.toggle-buttons button.active {
+  background-color: #2980b9;
+}
+
+.toggle-buttons button:hover {
+  background-color: #2980b9;
+}
